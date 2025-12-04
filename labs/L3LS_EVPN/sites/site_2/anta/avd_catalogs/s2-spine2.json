@@ -38,6 +38,11 @@
         },
         "neighbors": [
           {
+            "port": "Ethernet2",
+            "neighbor_device": "s2-leaf1.atd.lab",
+            "neighbor_port": "Ethernet3"
+          },
+          {
             "port": "Ethernet3",
             "neighbor_device": "s2-leaf2.atd.lab",
             "neighbor_port": "Ethernet3"
@@ -77,6 +82,12 @@
           ]
         },
         "hosts": [
+          {
+            "destination": "172.16.2.3",
+            "source": "172.16.2.2",
+            "vrf": "default",
+            "repeat": 1
+          },
           {
             "destination": "172.16.2.7",
             "source": "172.16.2.6",
@@ -122,6 +133,12 @@
           ]
         },
         "hosts": [
+          {
+            "destination": "10.250.2.3",
+            "source": "Loopback0",
+            "vrf": "default",
+            "repeat": 1
+          },
           {
             "destination": "10.250.2.4",
             "source": "Loopback0",
@@ -355,6 +372,10 @@
         },
         "bgp_peers": [
           {
+            "peer_address": "10.250.2.3",
+            "vrf": "default"
+          },
+          {
             "peer_address": "10.250.2.4",
             "vrf": "default"
           },
@@ -372,6 +393,10 @@
           },
           {
             "peer_address": "10.250.2.8",
+            "vrf": "default"
+          },
+          {
+            "peer_address": "172.16.2.3",
             "vrf": "default"
           },
           {

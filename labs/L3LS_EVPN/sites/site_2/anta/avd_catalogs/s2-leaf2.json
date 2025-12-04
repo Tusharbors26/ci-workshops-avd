@@ -38,6 +38,11 @@
         },
         "neighbors": [
           {
+            "port": "Ethernet1",
+            "neighbor_device": "s2-leaf1.atd.lab",
+            "neighbor_port": "Ethernet1"
+          },
+          {
             "port": "Ethernet2",
             "neighbor_device": "s2-spine1.atd.lab",
             "neighbor_port": "Ethernet3"
@@ -46,6 +51,11 @@
             "port": "Ethernet3",
             "neighbor_device": "s2-spine2.atd.lab",
             "neighbor_port": "Ethernet3"
+          },
+          {
+            "port": "Ethernet6",
+            "neighbor_device": "s2-leaf1.atd.lab",
+            "neighbor_port": "Ethernet6"
           }
         ]
       }
@@ -258,6 +268,10 @@
             "status": "up"
           },
           {
+            "name": "Ethernet4",
+            "status": "up"
+          },
+          {
             "name": "Ethernet6",
             "status": "up"
           },
@@ -271,6 +285,22 @@
           },
           {
             "name": "Port-Channel1",
+            "status": "up"
+          },
+          {
+            "name": "Port-Channel4",
+            "status": "up"
+          },
+          {
+            "name": "Vlan10",
+            "status": "up"
+          },
+          {
+            "name": "Vlan20",
+            "status": "up"
+          },
+          {
+            "name": "Vlan3009",
             "status": "up"
           },
           {
@@ -383,6 +413,10 @@
           },
           {
             "peer_address": "10.250.2.2",
+            "vrf": "default"
+          },
+          {
+            "peer_address": "10.252.2.0",
             "vrf": "default"
           },
           {
