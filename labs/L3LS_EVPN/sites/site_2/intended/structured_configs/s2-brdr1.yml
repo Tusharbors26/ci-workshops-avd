@@ -302,7 +302,7 @@ vlan_interfaces:
   description: Ten
   shutdown: false
   vrf: OVERLAY
-  ip_address_virtual: 10.10.10.3/24
+  ip_address_virtual: 10.10.10.1/24
   tenant: S2_FABRIC
 - name: Vlan20
   description: Twenty
