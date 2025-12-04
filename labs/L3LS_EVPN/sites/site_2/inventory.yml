@@ -12,7 +12,6 @@ SITE2:
             s2-spine2:
         SITE2_LEAFS:
           hosts:
-            s2-leaf1:
             s2-leaf2:
             s2-leaf3:
             s2-leaf4:
