@@ -446,7 +446,7 @@ interface Loopback1
 
 | Interface | VRF | IP Address | IP Address Virtual | IP Router Virtual Address | ACL In | ACL Out |
 | --------- | --- | ---------- | ------------------ | ------------------------- | ------ | ------- |
-| Vlan10 |  OVERLAY  |  -  |  10.10.10.1/24  |  -  |  -  |  -  |
+| Vlan10 |  OVERLAY  |  -  |  10.10.10.3/24  |  -  |  -  |  -  |
 | Vlan20 |  OVERLAY  |  -  |  10.20.20.1/24  |  -  |  -  |  -  |
 | Vlan3009 |  OVERLAY  |  10.252.2.8/31  |  -  |  -  |  -  |  -  |
 | Vlan4093 |  default  |  10.252.2.8/31  |  -  |  -  |  -  |  -  |
@@ -460,7 +460,7 @@ interface Vlan10
    description Ten
    no shutdown
    vrf OVERLAY
-   ip address virtual 10.10.10.1/24
+   ip address virtual 10.10.10.3/24
 !
 interface Vlan20
    description Twenty
