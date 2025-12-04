@@ -66,5 +66,5 @@ preplab: ## Deploy Configs via eAPI
 all: build-site-1 build-site-2 deploy-site-1 deploy-site-2
 
 .PHONY: cvpfalse-site-2
-cvp-site-2: ## Deploy Configs via CloudVision Static Configuration Studio
+cvpfalse-site-2: ## Deploy Configs via CloudVision Static Configuration Studio
 	ansible-playbook playbooks/cvpfake.yml -i sites/site_2/inventory.yml -e "target_hosts=SITE2_FABRIC"
