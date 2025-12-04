@@ -8,6 +8,10 @@ banners:
 
     EOF
 
+
+
+    # Syslog
+
     '
 config_end: true
 daemon_terminattr:
@@ -99,6 +103,15 @@ local_users:
   sha512_password: $6$arista$B4i2HD8KtgIc7GtbImxNqI0NDIh4dcvPe6UPmw8YWetu/yXk3764yXeSMf5NTcgh0fO35oFcbgxPjO8I0Q5yY/
   ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3N4MPP9cwD/5ZmDjioG51kUCjbLrPKOYNuS5Q/t6Mri8vAizyFFWLMYkS31b948PVEc6JZSE3/2WvHhhDssNQFjRiCs9v9+c7DGGOXR2I3lpmFd7qfV52XPcJL8M6agZrqnH/29M3UpitrmDlKiwjOiypSpetns6fATKwtyr3KH9qZksHKXwgg91VjIKR++43fPyX4DGndKPh0/5vGDdSzG1pKcMdo0BnllG2Zwk/KZ+ex2idme2tYT5HqLGnu3pI8XNUwUQ/Kxx3VgtHx6oxKjrAizTT2Aw22Vh2fLtb1G/CCiPoa5NQf+F8q2deqf45J0M4DHXmwQKU+OgVK+4/
     arista@mckesson-training-3-a8750166-eos
+logging:
+  vrfs:
+  - name: default
+    source_interface: Management0
+    hosts:
+    - name: 10.200.0.108
+      protocol: udp
+    - name: 10.200.1.108
+      protocol: udp
 loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
